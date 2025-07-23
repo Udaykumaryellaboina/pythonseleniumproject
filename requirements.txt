@@ -1,0 +1,6 @@
+Selenium==4.0.0
+behave==1.2.6
+webdriver-manager==3.5.0
+pytest==6.2.4
+requests==2.26.0
+configparser==5.2.0
