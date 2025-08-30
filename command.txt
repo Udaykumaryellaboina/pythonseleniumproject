@@ -1,0 +1,23 @@
+# Activate virtual environment (Windows)
+venv\Scripts\activate
+
+# Install requirements
+pip install -r requirements.txt
+
+# Run all Behave tests with HTML report
+behave -f behave_html_formatter:HTMLFormatter -o reports/report.html
+
+# Run a specific feature file
+behave features/Ajax.feature
+
+# Run scenarios with a specific tag
+behave -t @tagname
+
+# Deactivate virtual environment
+deactivate
+
+# Lint code
+flake8 .
+
+# Format code
+black .
